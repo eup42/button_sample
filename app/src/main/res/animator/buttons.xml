@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_pressed="true">
+            <set>
+                <objectAnimator
+                    android:duration="100"
+                    android:propertyName="backgroundColor"
+                    android:valueFrom="@android:color/holo_red_light"
+                    android:valueTo="@android:color/holo_red_dark"/>
+            </set>
+        </item>
+        <item android:state_pressed="false">
+            <objectAnimator
+                    android:duration="100"
+                    android:propertyName="backgroundColor"
+                    android:valueFrom="@android:color/holo_red_dark"
+                    android:valueTo="@android:color/holo_red_light"/>
+        </item>
+</selector>
